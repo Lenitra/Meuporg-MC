@@ -1,7 +1,12 @@
+body {
+    margin: 0;
+}
+
 /* #region Background */
 
 html {
-    background-color: black;
+    background-color: rgb(24, 24, 24);
+    margin: 0;
 }
 
 .bg {
@@ -42,6 +47,10 @@ html {
   font-family: "Titres";
   src: url("../police/titres.otf")
   }
+@font-face {
+  font-family: "Glitch";
+  src: url("../police/glitched.otf")
+  }
 /* #endregion */
 
 
@@ -54,7 +63,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* #region Grille principale */
 div.main {
     display: grid; 
-    grid-template-columns: 25vw 74vw; 
+    grid-template-columns: 25vw 75vw; 
     grid-template-rows: 1fr; 
     gap: 0px 0px; 
     grid-template-areas: ". ."; 
@@ -62,9 +71,17 @@ div.main {
 
 /* #region Menu */
 
+div.page {
+
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+}
+
 div.menu {
     border-right: 1px solid #5f5f5f;
-    height: 98vh;
+    height: 100vh;
+    /* position: fixed; */
 }
 div.menu>header{
     height: 10vw;
@@ -82,13 +99,29 @@ div.menu>header{
     font-family: Titres;
 }
 
+#connexion{
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    left: 0vw;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 5px;
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
 ul.menunav{
     list-style: none;
 }
+ul.menunav h3 {
+    text-align: left;
+}
+
 
 footer {
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 2px;
     left: 3px;
     width: 25vw;
@@ -97,5 +130,29 @@ footer {
 
 /* #endregion */
 
+
+/* #endregion */
+
+
+/* #region Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153); 
+}
 
 /* #endregion */
