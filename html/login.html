@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manga Factory</title>
+    <script src = "../static/Js/Main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="../static/style/global.css" />
+    <link rel="stylesheet" media="screen" href="../static/style/login.css" />
+</head>
+<body>
+    <div id="container_page">
+        <section class="column left"></section>
+        <section class="column central">
+            <h1 id="titre" >Manga Factory</h1>
+            <nav>
+
+                <a href="index.html">Accueil</a>
+
+                <a href="#">Les + Vues</a>
+
+                <a href="#">Nouveautées</a>
+
+                <a href="#">Favoris</a>
+            </nav>
+            <div class="logDiv">
+                <article class="log">
+                    <form class="login_form" action="/action_page.php" method="post">        
+                        <div>
+                            <h2>Connexion</h2><hr>
+                            <div class="log_cont">
+                                <label for="loguser"></label>
+                                <i class="fa fa-envelope icon"></i>
+                                <input class="input-field" type="email" placeholder="Adresse mail" name="loguser" required>
+                            </div>
+                            <div class="log_cont">
+                                <label for="logmdp"></label>
+                                <i class="fa fa-key icon"></i>
+                                <input class="input-field" type="password" placeholder="Mot de passe" name="logmdp" required>
+                            </div>
+                                <button type="submit">Se connecter</button>
+                        </div>  
+                    
+                        <div>
+                            <a class="forgmdp" href="#">Mot de passe oublié</a>
+                        </div>
+                    </form>
+                </article>
+                <article class="log">
+                    <form class="login_form" action="/action_page.php" method="post">        
+                        <div class="container">
+                            <h2>Inscription</h2><hr>
+                            
+                            <div class="log_cont">
+                                <label for="inscpseudo"></label>
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" placeholder="Pseudo" name="inscpseudo" required>
+                            </div>
+
+                                <div class="log_cont">
+                                <label for="inscuser"></label>
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" placeholder="Adresse mail" name="inscuser" required>
+                            </div>
+
+                            <div class="log_cont">
+                                <label for="inscmdp"></label>
+                                <i class="fa fa-key icon"></i>
+                                <input type="password" placeholder="Mot de passe" name="inscmdp" required>
+                            </div>
+
+                            <div class="log_cont">
+                                <label for="conf_inscmdp"></label>
+                                <i class="fa fa-expeditedssl icon"></i>  
+                                <input type="password" placeholder="Confirmation du mot de passe" name="conf_inscmdp" required>
+                            </div>
+                            <button type="submit">S'enregistrer</button>
+                        </div>
+                    </form>
+                </article>
+
+        </section>
+        <section class="column right"></section>
+    </div>
+</body>
+</html>
