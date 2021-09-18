@@ -1,0 +1,73 @@
+.logDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+}
+
+.log{
+    margin: 5%;
+}
+
+.log_cont {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.icon {
+    padding: 10px;
+    background: black;
+    color: white;
+    min-width: 20px;
+    text-align: center;
+  }
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    padding: 3%;
+    background-color: rgb(51, 48, 48);
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 14px 20px;
+    margin: 3% auto;
+    cursor: pointer;
+    min-width: 50%;
+    display: block;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+.forgmdp{
+    color: white;
+    text-decoration: none;
+}
+
+.forgmdp:hover{
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .logDiv{
+        display: block;
+        padding: 5%;
+    }   
+}
